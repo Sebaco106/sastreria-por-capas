@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sastrería</title>
+</head>
+<body>
+
+  <h1>Sastrería - Sistema de Órdenes de Trabajo</h1>
+
+  <form id="ordenForm">
+    <label for="tipoTerno">Tipo de Terno:</label>
+    <input type="text" id="tipoTerno" required>
+
+    <label for="color">Color:</label>
+    <input type="text" id="color" required>
+
+    <label for="talla">Talla:</label>
+    <input type="text" id="talla" required>
+
+    <label for="precioTotal">Precio Total:</label>
+    <input type="number" id="precioTotal" required>
+
+    <button type="button" onclick="registrarOrden()">Registrar Orden</button>
+  </form>
+
+  <button type="button" onclick="mostrarOrdenes()">Mostrar Órdenes</button>
+
+  <div id="ordenesList"></div>
+
+  <script src="sastreria.js"></script>
+</body>
+</html>
