@@ -1,24 +1,3 @@
-/*const NegocioSastreria = require('../Capa negocios/NegocioSastreria');
-
-class InterfazUsuario {
-    constructor(negocioSastreria) {
-      this.negocioSastreria = negocioSastreria;
-    }
-  
-    mostrarOrdenes() {
-      const ordenes = this.negocioSastreria.obtenerOrdenes();
-      console.log("Ordenes de Trabajo:");
-      ordenes.forEach((orden, index) => {
-        console.log(`${index + 1}. Tipo Terno: ${orden.tipoTerno}, Color: ${orden.color}, Talla: ${orden.talla}, Precio Total: ${orden.precioTotal}`);
-      });
-    }
-  
-    registrarOrden(tipoTerno, color, talla, precioTotal) {
-      this.negocioSastreria.crearOrden(tipoTerno, color, talla, precioTotal);
-      console.log("Orden registrada con éxito.");
-    }
-  }
-module.exports = InterfazUsuario;*/
 
 class InterfazUsuario {
   constructor() {}
