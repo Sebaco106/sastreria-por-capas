@@ -1,15 +1,17 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css"
   <title>Sastrería</title>
 </head>
 <body>
 
   <h1>Sastrería - Sistema de Órdenes de Trabajo</h1>
 
-  <form id="ordenForm">
+  <form id="ordenForm" action="http://localhost:3030/registrarOrden" method="POST">
     <label for="tipoTerno">Tipo de Terno:</label>
     <input type="text" id="tipoTerno" required>
 
@@ -22,10 +24,10 @@
     <label for="precioTotal">Precio Total:</label>
     <input type="number" id="precioTotal" required>
 
-    <button type="button" onclick="registrarOrden()">Registrar Orden</button>
+    <button type="submit">Registrar Orden</button>
   </form>
 
-  <button type="button" onclick="mostrarOrdenes()">Mostrar Órdenes</button>
+  <button type="submit" form="ordenForm">Mostrar Órdenes</button>
 
   <div id="ordenesList"></div>
 
